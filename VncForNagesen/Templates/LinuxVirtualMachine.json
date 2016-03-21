@@ -1,5 +1,5 @@
 ﻿{
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01-preview/deploymentTemplate.json",
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminUsername": {
@@ -177,32 +177,32 @@
           ]
         }
       },
-        "resources": [
-            {
-                "name": "startup",
-                "type": "extensions",
-                "location": "[resourceGroup().location]",
-                "apiVersion": "2015-06-15",
-                "dependsOn": [
-                    "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
-                ],
-                "tags": {
-                    "displayName": "startup"
-                },
-                "properties": {
-                    "publisher": "Microsoft.OSTCExtensions",
-                    "type": "CustomScriptForLinux",
-                    "typeHandlerVersion": "1.4",
-                    "autoUpgradeMinorVersion": true,
-                  "settings": {
-                    "fileUris": [
-                      "https://raw.githubusercontent.com/darkcrash/VncForNagesen/master/VncForNagesen/CustomScripts/startup.sh"
-                    ],
-                    "commandToExecute": "sh startup.sh"
-                  }
-                }
+      "resources": [
+        {
+          "name": "startup",
+          "type": "extensions",
+          "location": "[resourceGroup().location]",
+          "apiVersion": "2015-06-15",
+          "dependsOn": [
+            "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+          ],
+          "tags": {
+            "displayName": "startup"
+          },
+          "properties": {
+            "publisher": "Microsoft.OSTCExtensions",
+            "type": "CustomScriptForLinux",
+            "typeHandlerVersion": "1.4",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/darkcrash/VncForNagesen/master/VncForNagesen/CustomScripts/startup.sh"
+              ],
+              "commandToExecute": "sh startup.sh"
             }
-        ]
+          }
+        }
+      ]
     }
   ]
 }
