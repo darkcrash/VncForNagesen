@@ -2,10 +2,10 @@
 This is AzureResourceManager template and VMExtension custom script.
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdarkcrash%2FVncForNagesen%2Fmaster%2FVncForNagesen%2FTemplates%2FLinuxVirtualMachine.json" target="_blank">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3a%2f%2fraw%2egithubusercontent%2ecom%2fdarkcrash%2fVncForNagesen%2fmaster%2fVncForNagesen%2fTemplates%2fLinuxVirtualMachine%2ejson" target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png"/>
 </a>
-<a href="http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2Fdarkcrash%2FVncForNagesen%2Fmaster%2FVncForNagesen%2FTemplates%2FLinuxVirtualMachine.json" target="_blank">
+<a href="http://armviz.io/#/?load=https%3a%2f%2fraw%2egithubusercontent%2ecom%2fdarkcrash%2fVncForNagesen%2fmaster%2fVncForNagesen%2fTemplates%2fLinuxVirtualMachine%2ejson" target="_blank">
     <img src="http://armviz.io/visualizebutton.png"/>
 </a>
 
