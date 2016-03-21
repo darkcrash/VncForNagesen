@@ -216,9 +216,9 @@
                     "typeHandlerVersion": "1.4",
                     "autoUpgradeMinorVersion": true,
                     "settings": {
-                        "fileUris": [
-                            "[concat(parameters('_artifactsLocation'), '/', variables('startupScriptFolder'), '/', variables('startupScriptFileName'), parameters('_artifactsLocationSasToken'))]"
-                        ],
+                      "fileUris": [
+                        "https://raw.githubusercontent.com/darkcrash/VncForNagesen/master/VncForNagesen/CustomScripts/startup.sh"
+                      ],
                         "commandToExecute": "[concat('sh ', variables('startupScriptFileName'))]"
                     }
                 }
