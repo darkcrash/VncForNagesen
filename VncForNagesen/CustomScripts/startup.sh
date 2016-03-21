@@ -83,7 +83,7 @@ sudo sh -c "echo 'redirect_stderr=true' >> /etc/supervisor/conf.d/svvnc.conf"
 sudo sh -c "echo 'stopasgroup=true' >> /etc/supervisor/conf.d/svvnc.conf"
 sudo sh -c "echo '' >> /etc/supervisor/conf.d/svvnc.conf"
 
-sudo service supervisor start
+sudo service supervisor restart
 
 # LXDE autostart
 # sleep(5)
